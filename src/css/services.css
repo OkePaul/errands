@@ -1,0 +1,29 @@
+body{
+    background: #f1f1f1;
+}
+.items{
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.items img{
+   width: 250px;
+}
+.items p{
+    text-align: left;
+}
+@media (min-width: 750px){
+    .items{
+        background: #ffffff;
+        display: flex;
+        text-align: initial;
+    }
+    .items img{
+        float: left;
+    }
+    .items .catee{
+        float: right;
+        margin-left: 7%;
+    }
+}

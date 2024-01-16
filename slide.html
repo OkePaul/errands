@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="why_us">
+        <div class="slide-container">
+            <div class="button-container">
+                <h1>Why Choose Us</h1>
+                <li class="message" onclick="toggleLogin()"><a href="#info-1" class="slider-button">Paragraph One</a>
+                </li>
+                <li class="message" onclick="toggleLogin()"><a href="#introd" class="slider-button">Paragraph Two</a>
+                </li>
+                <li class="message" onclick="toggleLogin()"><a href="#info-3" class="slider-button">Paragraph Three</a>
+                </li>
+            </div>
+            <span id="info-1"></span>
+            <span id="info-2"></span>
+            <span id="info-3"></span>
+            <div class="image-container">
+                <div class="slider-image">
+                    <div class="first">
+                        <h1>Heading One</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad beatae neque veritatis
+                            sint illo quae eligendi,
+                            ab possimus.
+                            Sed illum dolore quidem inventore rem voluptas quod corrupti quis ex.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad beatae neque veritatis
+                            sint illo quae eligendi,
+                            ab possimus.
+                            Sed illum dolore quidem inventore rem voluptas quod corrupti quis ex.
+                        </p>
+                    </div>
+
+                    <div class="second">
+                        <h1>Heading Two</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad beatae neque veritatis
+                            sint illo quae eligendi,
+                            ab possimus.
+                            Sed illum dolore quidem inventore rem voluptas quod corrupti quis ex.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad beatae neque veritatis
+                            sint illo quae eligendi,
+                            ab possimus.
+                            Sed illum dolore quidem inventore rem voluptas quod corrupti quis ex.
+                        </p>
+                    </div>
+
+                    <div class="third">
+                        <h1>Heading Three</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad beatae neque veritatis
+                            sint illo quae eligendi,
+                            ab possimus.
+                            Sed illum dolore quidem inventore rem voluptas quod corrupti quis ex.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad beatae neque veritatis
+                            sint illo quae eligendi,
+                            ab possimus.
+                            Sed illum dolore quidem inventore rem voluptas quod corrupti quis ex.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    .slide-container {
+        background-color: purple;
+        display: flex;
+        height: 290px;
+    }
+
+    .button-container {
+        background-color: rgb(230, 78, 230);
+        width: 25%;
+    }
+
+    .button-container h1 {
+        padding-left: 22px;
+    }
+
+    .button-container li {
+        list-style: none;
+        background: rgb(228, 121, 228);
+        padding: 20px;
+        border-bottom: 1px solid blue;
+    }
+
+    .button-container li:last-child {
+        border-bottom: none;
+    }
+
+    .button-container li a {
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .button-container li:hover {
+        background-color: rgb(134, 40, 134);
+    }
+
+    
+</style>

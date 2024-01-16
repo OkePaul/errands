@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="src/pics/LOGO 3.jpg">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/services.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <!-- <h1 class="logo">ohis errands</h1> -->
+            <a href="index.html"><img class="logo" src="src/pics/LOGO 3.jpg" alt=""></a>
+            <nav class="site-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-home site-nav--icon"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-briefcase site-nav--icon"></i>Our Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa fa-envelope site-nav--icon"></i>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="text-align: center;">Services we offer</h1>
+        <div class="items">
+            <img src="src/pics/WhatsApp Image 2020-09-08 at 8.14.33 PM.jpeg" alt="">
+            <div class="catee">
+                <h2>Goods Purchase</h2>
+                <p>We help our clients go to the store to get the goods needed by our clients. Our clients contact us through the form on our website by filling the form with the details of their order, we go to the stores on behalf of our clients (relieving their stress in the process). Once order is placed, we get to the store and you get your goods delvered in good time. </p>
+                <p>We assist in purchase of the purchase of goods like groceries,stationeries, accessories and lots more. We try our best to get you the best. </p>    
+            </div>
+        </div>
+
+        <div class="items">
+            <img src="src/pics/WhatsApp Image 2020-09-08 at 8.14.34 PM.jpeg" alt="">
+            <div class="catee">
+                <h2>Goods Delivery</h2>
+                <p>Once goods are bought, we make use of the address in the form filled to get your location and bring the items bought right to your doorstep. </p>
+            </div>
+        </div>
+
+        <div class="items">
+            <img src="src/pics/images (60).jpg" alt="">
+            <div class="catee">
+                <h2>Items Pick Up and Delivery</h2>
+                <p>Do you want to send items to someone? All you have to do is give us a call, give us the address and contact of the person the items are to be delivered to and we will get the items to them.</p>    
+            </div>
+        </div>
+    </div>
+    <div id="cta">
+        <h1 class="pr">
+            Hello!
+            <br />
+            <span class="pra">Need someone to run your errands?</span>
+        </h1>
+        <button class="butt button" onclick="toggleLogin()">Contact us</button>
+    </div>
+    <footer>
+        &copy; 2020 Ohis errands
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $('.menu-toggle').click(function () {
+            $('.site-nav').toggleClass('site-nav--open', 500);
+            $(this).toggleClass('open');
+        })
+    </script>
+    <script>
+        function toggleLogin() {
+            //document.querySelector("contact.html").classList.toggle("open");
+            window.location = "contact.html"
+        }
+    </script>
+</body>
+</html>

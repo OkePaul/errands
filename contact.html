@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="src/pics/LOGO 3.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <a href="index.html"><img class="logo" src="src/pics/LOGO 3.jpg" alt=""></a>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                    <li><a href="services.html"><i class="fa fa-briefcase site-nav--icon"></i>Our Services</a></li>
+                    <li><a href="#"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="contact">
+            <div class="cont-img">
+                <img src="src/pics/images (57).jpg" alt="">
+            </div>
+            <div class="contact-form">
+                <h2>Send us your Errands</h2>
+        
+                <div class="form">
+                    <input type="text" name="name" autocomplete="off" required />
+                    <label for="name" class="label-name">
+                        <span class="content-name">Name</span>
+                    </label>
+                </div>
+                <div class="form">
+                    <input type="tel" name="tel" autocomplete="off" required />
+                    <label for="telephone" class="label-name">
+                        <span class="content-name">Telephone</span>
+                    </label>
+                </div>
+                <div class="form">
+                    <input type="email" name="email" autocomplete="off" required />
+                    <label for="name" class="label-name">
+                        <span class="content-name">Email</span>
+                    </label>
+                </div>
+                <div class="form">
+                    <input type="text" name="address" autocomplete="off" required />
+                    <label for="address" class="label-name">
+                        <span class="content-name">Address</span>
+                    </label>
+                </div>
+                <div class="form">
+                    <textarea id="message" class="font-sans" name="message" rows="1" required style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 41px;"></textarea>
+                    <label for="name" class="label-name">
+                        <span class="content-name">Order</span>
+                    </label>
+                </div>
+        
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="connect">
+        <ul class="icons-ul">
+            <li class="icons-li"><a href="#"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a></li>
+            <li class="icons-li"><a href="#"><i class="fa fa-instagram instagram" aria-hidden="true"></i></a></li>
+            <li class="icons-li"><a href="#"><i class="fa fa-whatsapp whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2020 Ohis errands
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $('.menu-toggle').click(function () {
+            $('.site-nav').toggleClass('site-nav--open', 500);
+            $(this).toggleClass('open');
+        })
+    </script>
+</body>
+</html>

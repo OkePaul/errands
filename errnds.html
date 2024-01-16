@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="href=assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card middle">
+            <div class="front">
+                <h1>why we are where we are</h1>
+            </div>
+            <div class="back">
+                <div class="back-content middle">
+                    <h2>we are here</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nemo nostrum cumque eius a. Id voluptatum magni 
+                        reiciendis officiis, aut aliquam maxime a in incidunt
+                         ex blanditiis quis tempora fugiat voluptatem.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem deleniti iure pariatur impedit vero veritatis illo enim officia dolorem harum iusto quasi, eaque doloremque molestiae vitae numquam dolorum fugit id.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card middle">
+            <div class="front">
+                <h1>why we are where we are</h1>
+            </div>
+            <div class="back">
+                <div class="back-content middle">
+                    <h2>we are here</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nemo nostrum cumque eius a. Id voluptatum magni 
+                        reiciendis officiis, aut aliquam maxime a in incidunt
+                         ex blanditiis quis tempora fugiat voluptatem.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem deleniti iure pariatur impedit vero veritatis illo enim officia dolorem harum iusto quasi, eaque doloremque molestiae vitae numquam dolorum fugit id.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card middle">
+            <div class="front">
+                <h1>why we are where we are</h1>
+            </div>
+            <div class="back">
+                <div class="back-content middle">
+                    <h2>we are here</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nemo nostrum cumque eius a. Id voluptatum magni 
+                        reiciendis officiis, aut aliquam maxime a in incidunt
+                         ex blanditiis quis tempora fugiat voluptatem.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem deleniti iure pariatur impedit vero veritatis illo enim officia dolorem harum iusto quasi, eaque doloremque molestiae vitae numquam dolorum fugit id.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: "montserrat";
+        }
+        body{
+            background: rgb(79, 52, 114);
+        }
+        
+        .middle{
+            position: relative;
+            display: inline-block;
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            background: #ffffff;
+        }
+        .card{
+            cursor: pointer;
+            width: 300px;
+            height: 400px;
+        }
+        .front,.back{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            transition: transform .6s linear;
+            color: #000000;
+        }
+        .front h1{
+            text-align: center;
+        }
+        .front{
+            transform: perspective(600px) rotateY(0deg);
+        }
+        .back{
+            transform: perspective(600px) rotateY(180deg);
+        }
+        .back-content{
+            text-align: center;
+            width: 100%;
+        }
+        .card:hover > .front{
+            transform: perspective(600px) rotateY(-180deg);
+        }
+        .card:hover > .back{
+            transform: perspective(600px) rotateY(0deg);
+        }
+
+    </style>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="src/assets/fontawesome/js/fontawesome.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</body>
+</html>
